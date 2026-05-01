@@ -64,31 +64,32 @@
 
         /* FILTER BAR */
         .filter-bar {
-            padding: 20px 40px;
+            padding: 16px 40px;
             border-bottom: 1px solid var(--border);
             display: flex;
-            gap: 8px;
+            gap: 6px;
             flex-wrap: wrap;
             align-items: center;
         }
         .filter-label {
-            font-size: 0.65rem;
+            font-size: 0.6rem;
             letter-spacing: 0.2em;
             text-transform: uppercase;
             color: var(--muted);
-            margin-right: 8px;
+            margin-right: 6px;
         }
         .filter-btn {
             background: none;
             border: 1px solid var(--border);
             color: var(--muted);
-            padding: 5px 14px;
+            padding: 4px 12px;
             font-family: 'Montserrat', sans-serif;
-            font-size: 0.7rem;
-            letter-spacing: 0.12em;
+            font-size: 0.65rem;
+            letter-spacing: 0.1em;
             text-transform: uppercase;
             cursor: pointer;
             transition: all 0.2s;
+            white-space: nowrap;
         }
         .filter-btn:hover, .filter-btn.active {
             border-color: var(--accent);
@@ -98,17 +99,44 @@
             background: none;
             border: 1px solid var(--border);
             color: var(--text);
-            padding: 5px 14px;
+            padding: 4px 14px;
             font-family: 'Montserrat', sans-serif;
             font-size: 0.7rem;
             letter-spacing: 0.08em;
             outline: none;
             margin-left: auto;
-            width: 220px;
+            width: 200px;
             transition: border-color 0.2s;
         }
         #search::placeholder { color: var(--muted); }
         #search:focus { border-color: var(--accent); }
+
+        /* SERIES HEADINGS */
+        .series-heading {
+            grid-column: 1 / -1;
+            padding: 30px 0 12px;
+            display: flex;
+            align-items: baseline;
+            gap: 16px;
+        }
+        .series-heading h2 {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 1.5rem;
+            font-weight: 300;
+            letter-spacing: 0.06em;
+            color: var(--text);
+        }
+        .series-heading .series-count {
+            font-size: 0.6rem;
+            letter-spacing: 0.2em;
+            text-transform: uppercase;
+            color: var(--accent-dim);
+        }
+        .series-divider {
+            flex: 1;
+            height: 1px;
+            background: var(--border);
+        }
 
         /* GRID */
         .container { padding: 40px; }
@@ -409,13 +437,22 @@
 </header>
 
 <div class="filter-bar">
-    <span class="filter-label">Filter</span>
+    <span class="filter-label">Series</span>
     <button class="filter-btn active" data-filter="all">All</button>
-    <button class="filter-btn" data-filter="good">Good Condition</button>
-    <button class="filter-btn" data-filter="damage">Has Damage</button>
-    <button class="filter-btn" data-filter="large">Large (4ft+)</button>
-    <button class="filter-btn" data-filter="panoramic">Panoramic</button>
-    <input type="text" id="search" placeholder="Search titles...">
+    <button class="filter-btn" data-filter="Botanical">Botanical</button>
+    <button class="filter-btn" data-filter="Wildlife">Wildlife</button>
+    <button class="filter-btn" data-filter="New York">New York</button>
+    <button class="filter-btn" data-filter="Gaucho & Pampas">Gaucho</button>
+    <button class="filter-btn" data-filter="Ireland & Europe">Ireland & Europe</button>
+    <button class="filter-btn" data-filter="Nude Studies">Nudes</button>
+    <button class="filter-btn" data-filter="Chalk Series">Chalk</button>
+    <button class="filter-btn" data-filter="Hearts & Mesh">Hearts</button>
+    <button class="filter-btn" data-filter="The Beatles">Beatles</button>
+    <button class="filter-btn" data-filter="Surrealist Still Life">Surrealist</button>
+    <button class="filter-btn" data-filter="World Portraiture">Portraiture</button>
+    <button class="filter-btn" data-filter="Natural Landscapes">Natural Landscapes</button>
+    <button class="filter-btn" data-filter="damage">⚠ Damaged</button>
+    <input type="text" id="search" placeholder="Search...">
 </div>
 
 <div class="container">
@@ -472,12 +509,18 @@ let currentIndex = 0;
 let activeFilter = 'all';
 let searchTerm = '';
 
+const SERIES_ORDER = [
+    'Botanical','Wildlife','Hearts & Mesh','Chalk Series','New York',
+    'Gaucho & Pampas','Ireland & Europe','Natural Landscapes',
+    'World Portraiture','The Beatles','Nude Studies','Surrealist Still Life',
+    'Panoramics','Uncategorised'
+];
+
 async function init() {
     const res = await fetch('catalog.json');
     const data = await res.json();
     items = data.items;
     filtered = [...items];
-
     document.getElementById('total-count').textContent = `${items.length} prints`;
     renderGrid();
 }
@@ -485,21 +528,15 @@ async function init() {
 function applyFilters() {
     filtered = items.filter(item => {
         const hasDamage = item.condition && item.condition.toLowerCase().includes('damage');
-        const w = item.width_ft || 0;
-        const h = item.height_ft || 0;
-        const isLarge = w >= 4 || h >= 4;
-        const isPanoramic = (w / h) >= 2.5 || (h / w) >= 2.5;
         const matchesSearch = !searchTerm ||
             item.listing_name.toLowerCase().includes(searchTerm) ||
             item.original_title.toLowerCase().includes(searchTerm) ||
+            (item.series || '').toLowerCase().includes(searchTerm) ||
             item.description.toLowerCase().includes(searchTerm);
-
         if (!matchesSearch) return false;
-        if (activeFilter === 'good') return !hasDamage;
         if (activeFilter === 'damage') return hasDamage;
-        if (activeFilter === 'large') return isLarge;
-        if (activeFilter === 'panoramic') return isPanoramic;
-        return true;
+        if (activeFilter === 'all') return true;
+        return item.series === activeFilter;
     });
     renderGrid();
 }
@@ -508,44 +545,62 @@ function renderGrid() {
     const grid = document.getElementById('grid');
     const count = document.getElementById('results-count');
     count.textContent = `${filtered.length} of ${items.length} prints`;
+    grid.innerHTML = '';
 
-    // Mark all hidden first
-    const cards = grid.querySelectorAll('.card');
-    cards.forEach(c => c.classList.add('hidden'));
+    const showSeries = activeFilter === 'all' && !searchTerm;
 
-    if (grid.children.length === 0) {
-        // First render
-        items.forEach((item, i) => {
-            const hasDamage = item.condition && item.condition.toLowerCase().includes('damage');
-            const shortTitle = item.listing_name.split('—')[0].trim();
-            const inFiltered = filtered.includes(item);
+    if (showSeries) {
+        // Group by series
+        const groups = {};
+        SERIES_ORDER.forEach(s => groups[s] = []);
+        filtered.forEach(item => {
+            const s = item.series || 'Uncategorised';
+            if (groups[s]) groups[s].push(item);
+        });
 
-            const card = document.createElement('div');
-            card.className = 'card' + (inFiltered ? '' : ' hidden');
-            card.dataset.uid = item.uid;
-            card.innerHTML = `
-                <img class="card-img" src="images/${item.main_photo}"
-                     alt="${item.listing_name}"
-                     loading="lazy"
-                     onerror="this.src='https://via.placeholder.com/400x300/161616/333?text=No+Image'">
-                <div class="card-overlay">
-                    <div class="card-number">No. ${item.number} — ${item.size_label}</div>
-                    <div class="card-listing-name">${item.listing_name.split('—')[0].trim()}</div>
-                </div>
-                <div class="card-footer">
-                    <div class="card-footer-title">${shortTitle}</div>
-                </div>
-                ${hasDamage ? '<div class="damage-badge">Condition</div>' : ''}
+        SERIES_ORDER.forEach(series => {
+            const group = groups[series];
+            if (!group || group.length === 0) return;
+
+            // Series heading spans full grid width
+            const heading = document.createElement('div');
+            heading.className = 'series-heading';
+            heading.innerHTML = `
+                <h2>${series}</h2>
+                <span class="series-count">${group.length} print${group.length > 1 ? 's' : ''}</span>
+                <div class="series-divider"></div>
             `;
-            card.addEventListener('click', () => openLightbox(item.uid));
-            grid.appendChild(card);
+            grid.appendChild(heading);
+
+            group.forEach(item => grid.appendChild(makeCard(item)));
         });
     } else {
-        items.forEach(item => {
-            const card = grid.querySelector(`[data-uid="${item.uid}"]`);
-            if (card) card.classList.toggle('hidden', !filtered.includes(item));
-        });
+        filtered.forEach(item => grid.appendChild(makeCard(item)));
     }
+}
+
+function makeCard(item) {
+    const hasDamage = item.condition && item.condition.toLowerCase().includes('damage');
+    const shortTitle = item.listing_name.split('—')[0].trim();
+    const card = document.createElement('div');
+    card.className = 'card';
+    card.dataset.uid = item.uid;
+    card.innerHTML = `
+        <img class="card-img" src="images/${item.main_photo}"
+             alt="${item.listing_name}"
+             loading="lazy"
+             onerror="this.src='https://via.placeholder.com/400x300/161616/333?text=No+Image'">
+        <div class="card-overlay">
+            <div class="card-number">No. ${item.number} — ${item.size_label}</div>
+            <div class="card-listing-name">${shortTitle}</div>
+        </div>
+        <div class="card-footer">
+            <div class="card-footer-title">${shortTitle}</div>
+        </div>
+        ${hasDamage ? '<div class="damage-badge">Condition</div>' : ''}
+    `;
+    card.addEventListener('click', () => openLightbox(item.uid));
+    return card;
 }
 
 function openLightbox(uid) {
@@ -575,7 +630,7 @@ function updateLightbox() {
 
     document.getElementById('lb-img').src = `images/${item.main_photo}`;
     document.getElementById('lb-img').alt = item.listing_name;
-    document.getElementById('lb-tag').textContent = `No. ${item.number} · Cibachrome Print`;
+    document.getElementById('lb-tag').textContent = `No. ${item.number} · ${item.series || 'Cibachrome Print'}`;
     document.getElementById('lb-title').textContent = item.listing_name.split('—')[0].trim();
     document.getElementById('lb-original').textContent = `Original catalog title: "${item.original_title}"`;
     document.getElementById('lb-width').textContent = item.width_ft ? `${item.width_ft} ft` : '—';

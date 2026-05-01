@@ -458,7 +458,7 @@
       "size_label": "4 ft \u00d7 2.5 ft",
       "condition": "Good",
       "main_photo": "2EDCE9DE-7CF4-4D4E-A269-2D168290F9BB_988F2A79-C0C1-49F0-BB58-7AB89D7AF72A.jpg",
-      "series": "Lighthouses & Seascape"
+      "series": "Natural Landscapes"
     },
     {
       "uid": "4C8FBCFC-FE0D-410E-ADEE-D92E917A99C2",
@@ -471,7 +471,7 @@
       "size_label": "3.5 ft \u00d7 2.5 ft",
       "condition": "Minor scratch/mark lower-left of image",
       "main_photo": "4C8FBCFC-FE0D-410E-ADEE-D92E917A99C2_CD7BF2D3-E910-45BB-A1B9-33D2662E1B59.jpg",
-      "series": "Lighthouses & Seascape"
+      "series": "Natural Landscapes"
     },
     {
       "uid": "3B48AD58-0C33-4EF8-AA3C-F5B27E3C3E90",
@@ -484,7 +484,20 @@
       "size_label": "4 ft \u00d7 2.5 ft",
       "condition": "Good",
       "main_photo": "3B48AD58-0C33-4EF8-AA3C-F5B27E3C3E90_792D771C-7A11-4F48-99D1-453F6D449B19.jpg",
-      "series": "Lighthouses & Seascape"
+      "series": "Natural Landscapes"
+    },
+    {
+      "uid": "CC0EEAC1-257C-4DE3-B30C-E0155AC0F19E",
+      "number": "49",
+      "original_title": "49. Dog Sled",
+      "listing_name": "Dog Sled Team, Alaska \u2014 Panoramic Cibachrome Print",
+      "description": "A spectacular panoramic large-format Cibachrome print of a dog sled team racing across a snow-covered Alaskan landscape, spruce trees and snow-capped mountains stretching across the deep blue horizon. Shot on Fujifilm Velvia (RVP), the colors are extraordinarily vivid. A companion panoramic to \"12. New York Harbor.\"",
+      "width_ft": 6,
+      "height_ft": 2,
+      "size_label": "6 ft \u00d7 2 ft",
+      "condition": "Good \u2014 FUJI RVP (Velvia) film markings and frame numbers visible in borders",
+      "main_photo": "CC0EEAC1-257C-4DE3-B30C-E0155AC0F19E_E9BA37CB-2802-4CDE-BDA4-DFA62C88E31F.jpg",
+      "series": "Natural Landscapes"
     },
     {
       "uid": "E13AE686-989F-431B-AB7B-5E8D99BF95FD",
@@ -497,7 +510,7 @@
       "size_label": "2 ft \u00d7 3 ft",
       "condition": "Good",
       "main_photo": "E13AE686-989F-431B-AB7B-5E8D99BF95FD_B651BBD2-68E1-4756-BC7B-50D874F72509.jpg",
-      "series": "Lighthouses & Seascape"
+      "series": "Natural Landscapes"
     },
     {
       "uid": "E155A334-645E-4B6F-9EEE-717FF3C9FAEB",
@@ -719,19 +732,6 @@
       "condition": "Good \u2014 registration punch holes in top border",
       "main_photo": "58B179B9-85DE-4B77-B601-BC3945391464_3ADB5575-20A2-4EC3-966B-12FAE5B1AAA0.jpg",
       "series": "Surrealist Still Life"
-    },
-    {
-      "uid": "CC0EEAC1-257C-4DE3-B30C-E0155AC0F19E",
-      "number": "49",
-      "original_title": "49. Dog Sled",
-      "listing_name": "Dog Sled Team, Alaska \u2014 Panoramic Cibachrome Print",
-      "description": "A spectacular panoramic large-format Cibachrome print of a dog sled team racing across a snow-covered Alaskan landscape, spruce trees and snow-capped mountains stretching across the deep blue horizon. Shot on Fujifilm Velvia (RVP), the colors are extraordinarily vivid. A companion panoramic to \"12. New York Harbor.\"",
-      "width_ft": 6,
-      "height_ft": 2,
-      "size_label": "6 ft \u00d7 2 ft",
-      "condition": "Good \u2014 FUJI RVP (Velvia) film markings and frame numbers visible in borders",
-      "main_photo": "CC0EEAC1-257C-4DE3-B30C-E0155AC0F19E_E9BA37CB-2802-4CDE-BDA4-DFA62C88E31F.jpg",
-      "series": "Panoramics"
     }
   ],
   "series": [
@@ -742,14 +742,12 @@
     "New York",
     "Gaucho & Pampas",
     "Ireland & Europe",
-    "Lighthouses & Seascape",
+    "Natural Landscapes",
     "World Portraiture",
     "The Beatles",
     "Nude Studies",
     "Surrealist Still Life",
-    "Night & Light",
     "Panoramics",
-    "Still Life",
     "Uncategorised"
   ]
 }
