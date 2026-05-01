@@ -180,7 +180,9 @@
             bottom: 0; left: 0; right: 0;
             padding: 10px 14px;
             background: linear-gradient(transparent, rgba(0,0,0,0.75));
+            transition: opacity 0.25s;
         }
+        .card:hover .card-footer { opacity: 0; }
         .card-footer-title {
             font-family: 'Cormorant Garamond', serif;
             font-size: 0.95rem;
@@ -357,6 +359,30 @@
             margin-top: 12px;
         }
 
+        /* ZOOM OVERLAY */
+        #zoom-overlay {
+            display: none;
+            position: fixed;
+            inset: 0;
+            background: #000;
+            z-index: 2000;
+            cursor: zoom-out;
+            align-items: center;
+            justify-content: center;
+        }
+        #zoom-overlay.open { display: flex; }
+        #zoom-img {
+            max-width: 100vw;
+            max-height: 100vh;
+            object-fit: contain;
+            user-select: none;
+        }
+        #lb-img {
+            cursor: zoom-in;
+            transition: opacity 0.2s;
+        }
+        #lb-img:hover { opacity: 0.92; }
+
         @media (max-width: 800px) {
             header { padding: 30px 20px 24px; flex-direction: column; gap: 12px; }
             .header-meta { text-align: left; }
@@ -433,6 +459,10 @@
             <div class="lb-description" id="lb-description"></div>
         </div>
     </div>
+</div>
+
+<div id="zoom-overlay" onclick="closeZoom()">
+    <img id="zoom-img" src="" alt="">
 </div>
 
 <script>
@@ -573,13 +603,27 @@ document.getElementById('search').addEventListener('input', e => {
     applyFilters();
 });
 
+function openZoom() {
+    const src = document.getElementById('lb-img').src;
+    document.getElementById('zoom-img').src = src;
+    document.getElementById('zoom-overlay').classList.add('open');
+}
+function closeZoom() {
+    document.getElementById('zoom-overlay').classList.remove('open');
+}
+
 // Keyboard nav
 document.addEventListener('keydown', e => {
+    if (document.getElementById('zoom-overlay').classList.contains('open')) {
+        closeZoom(); return;
+    }
     if (!document.getElementById('lightbox').classList.contains('open')) return;
     if (e.key === 'ArrowLeft') changeItem(-1);
     if (e.key === 'ArrowRight') changeItem(1);
     if (e.key === 'Escape') closeLightbox();
 });
+
+document.getElementById('lb-img').addEventListener('click', openZoom);
 
 init();
 </script>
