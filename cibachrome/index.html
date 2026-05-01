@@ -62,7 +62,31 @@
             line-height: 2;
         }
 
-        /* FILTER BAR */
+        /* PROVENANCE BLURB */
+        .provenance {
+            padding: 20px 40px;
+            border-bottom: 1px solid var(--border);
+            display: flex;
+            align-items: baseline;
+            gap: 20px;
+        }
+        .provenance-bar {
+            width: 2px;
+            height: 36px;
+            background: var(--accent);
+            flex-shrink: 0;
+            align-self: center;
+        }
+        .provenance p {
+            font-size: 0.8rem;
+            line-height: 1.7;
+            color: #9a9590;
+            max-width: 800px;
+        }
+        .provenance strong {
+            color: var(--text);
+            font-weight: 500;
+        }
         .filter-bar {
             padding: 16px 40px;
             border-bottom: 1px solid var(--border);
@@ -387,7 +411,92 @@
             margin-top: 12px;
         }
 
-        /* ZOOM OVERLAY */
+        /* SOLD overlay */
+        .sold-overlay {
+            position: absolute;
+            inset: 0;
+            background: rgba(0,0,0,0.25);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            z-index: 5;
+        }
+        .sold-stamp {
+            border: 2px solid #c0392b;
+            color: #c0392b;
+            font-family: 'Montserrat', sans-serif;
+            font-size: 0.7rem;
+            font-weight: 500;
+            letter-spacing: 0.25em;
+            text-transform: uppercase;
+            padding: 4px 12px;
+            transform: rotate(-12deg);
+            background: rgba(0,0,0,0.4);
+        }
+
+        /* Price in lightbox */
+        .lb-price {
+            margin-top: 24px;
+            padding: 16px 20px;
+            border: 1px solid var(--accent-dim);
+            display: flex;
+            align-items: baseline;
+            justify-content: space-between;
+        }
+        .lb-price-amount {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 2rem;
+            font-weight: 300;
+            color: var(--accent);
+        }
+        .lb-price-obo {
+            font-size: 0.65rem;
+            letter-spacing: 0.18em;
+            text-transform: uppercase;
+            color: var(--muted);
+        }
+        .lb-price-shipping {
+            font-size: 0.65rem;
+            letter-spacing: 0.12em;
+            color: var(--muted);
+        }
+        .lb-contact {
+            display: block;
+            margin-top: 12px;
+            padding: 12px 20px;
+            background: var(--accent);
+            color: #000;
+            text-align: center;
+            text-decoration: none;
+            font-family: 'Montserrat', sans-serif;
+            font-size: 0.72rem;
+            font-weight: 500;
+            letter-spacing: 0.18em;
+            text-transform: uppercase;
+            transition: background 0.2s;
+        }
+        .lb-contact:hover { background: #d4b87a; }
+        .lb-contact.sold-contact {
+            background: none;
+            border: 1px solid #444;
+            color: var(--muted);
+            pointer-events: none;
+        }
+        .lb-disclaimer {
+            margin-top: 14px;
+            font-size: 0.65rem;
+            line-height: 1.6;
+            color: var(--muted);
+            font-style: italic;
+            letter-spacing: 0.03em;
+        }
+            border-color: #c0392b;
+            opacity: 0.7;
+        }
+        .lb-price.sold .lb-price-amount {
+            color: #c0392b;
+            text-decoration: line-through;
+        }
         #zoom-overlay {
             display: none;
             position: fixed;
@@ -435,6 +544,11 @@
         <div>Large Format Photography</div>
     </div>
 </header>
+
+<div class="provenance">
+    <div class="provenance-bar"></div>
+    <p>These prints were <strong>rescued from the dumpster of a well-known New York City printing lab</strong> — a trove of large-format Cibachrome and Ilfochrome prints spanning botanical close-ups, street photography, portraiture, and landscapes. The lab's clients were professional photographers; these were surplus or uncollected prints. <strong>All 56 pieces are available for sale.</strong> Each is an original photographic print, not a reproduction.</p>
+</div>
 
 <div class="filter-bar">
     <span class="filter-label">Series</span>
@@ -494,6 +608,15 @@
             </div>
             <hr class="lb-divider">
             <div class="lb-description" id="lb-description"></div>
+            <div class="lb-price" id="lb-price">
+                <div>
+                    <div class="lb-price-amount" id="lb-price-amount"></div>
+                    <div class="lb-price-obo" id="lb-price-obo"></div>
+                </div>
+                <div class="lb-price-shipping" id="lb-price-shipping"></div>
+            </div>
+            <div class="lb-disclaimer">Original photographic print, photographer unknown. Sold as physical artwork only — no reproduction rights transferred.</div>
+            <a id="lb-contact" href="#" class="lb-contact">✉ Contact to Purchase</a>
         </div>
     </div>
 </div>
@@ -582,6 +705,7 @@ function renderGrid() {
 function makeCard(item) {
     const hasDamage = item.condition && item.condition.toLowerCase().includes('damage');
     const shortTitle = item.listing_name.split('—')[0].trim();
+    const isSold = item.sold;
     const card = document.createElement('div');
     card.className = 'card';
     card.dataset.uid = item.uid;
@@ -597,7 +721,8 @@ function makeCard(item) {
         <div class="card-footer">
             <div class="card-footer-title">${shortTitle}</div>
         </div>
-        ${hasDamage ? '<div class="damage-badge">Condition</div>' : ''}
+        ${isSold ? '<div class="sold-overlay"><div class="sold-stamp">Sold</div></div>' : ''}
+        ${!isSold && hasDamage ? '<div class="damage-badge">Condition</div>' : ''}
     `;
     card.addEventListener('click', () => openLightbox(item.uid));
     return card;
@@ -639,7 +764,26 @@ function updateLightbox() {
     condEl.textContent = item.condition || 'Good';
     condEl.className = 'lb-condition' + (hasDamage ? ' has-damage' : '');
     document.getElementById('lb-description').textContent = item.description;
+
+    const priceEl = document.getElementById('lb-price');
+    const isSold = item.sold;
+    priceEl.className = 'lb-price' + (isSold ? ' sold' : '');
+    document.getElementById('lb-price-amount').textContent = isSold ? 'SOLD' : `$${item.asking_price}`;
+    document.getElementById('lb-price-obo').textContent = isSold ? '' : 'or best offer';
+    document.getElementById('lb-price-shipping').textContent = isSold ? '' : `+ $${item.shipping} shipping (US)`;
     document.getElementById('lb-counter').textContent = `${currentIndex + 1} / ${filtered.length}`;
+    const contactEl = document.getElementById('lb-contact');
+    if (isSold) {
+        contactEl.textContent = 'Sold';
+        contactEl.className = 'lb-contact sold-contact';
+        contactEl.removeAttribute('href');
+    } else {
+        const subject = encodeURIComponent(`Enquiry: ${item.listing_name.split('—')[0].trim()} (No. ${item.number})`);
+        const body = encodeURIComponent(`Hi,\n\nI'm interested in purchasing:\n\n${item.listing_name.split('—')[0].trim()}\nSize: ${item.size_label}\nPrice: $${item.asking_price} + $${item.shipping} shipping\n\nPlease let me know how to proceed.\n\nThanks`);
+        contactEl.href = `mailto:cibachrome-prints.a9g7qx@bumpmail.io?subject=${subject}&body=${body}`;
+        contactEl.textContent = '✉ Contact to Purchase';
+        contactEl.className = 'lb-contact';
+    }
 }
 
 // Filter buttons

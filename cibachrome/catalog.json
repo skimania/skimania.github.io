@@ -16,7 +16,10 @@
       "size_label": "4 ft \u00d7 3 ft",
       "condition": "Good \u2014 FUJIFILM RDFM border marking",
       "main_photo": "D26F3F7D-81AE-4DF2-A4BE-5D4311EB8D6C_97A23024-80E8-4E7D-AD72-28E03AEE0334.jpg",
-      "series": "Botanical"
+      "series": "Botanical",
+      "asking_price": 450,
+      "sold": false,
+      "shipping": 35
     },
     {
       "uid": "4F99741D-0934-4CF4-B4E3-22BE3ABE6B30",
@@ -29,7 +32,10 @@
       "size_label": "4 ft \u00d7 3 ft",
       "condition": "Good \u2014 film edge marking visible in border (FUJIFILM RDPM)",
       "main_photo": "4F99741D-0934-4CF4-B4E3-22BE3ABE6B30_AEBF0DAB-5A81-4B49-92D2-1228C5D11160.jpg",
-      "series": "Botanical"
+      "series": "Botanical",
+      "asking_price": 450,
+      "sold": false,
+      "shipping": 35
     },
     {
       "uid": "7FB7B237-D673-453F-85A0-7FC6C859BAE2",
@@ -42,7 +48,10 @@
       "size_label": "4 ft \u00d7 3 ft",
       "condition": "Good \u2014 FUJIFILM film edge marking in bottom border",
       "main_photo": "7FB7B237-D673-453F-85A0-7FC6C859BAE2_DE86A86F-8D4A-410C-B41B-A8420FE11847.jpg",
-      "series": "Botanical"
+      "series": "Botanical",
+      "asking_price": 450,
+      "sold": false,
+      "shipping": 35
     },
     {
       "uid": "7B68AA71-B730-4C40-94A8-A5A44C69B302",
@@ -55,7 +64,10 @@
       "size_label": "2 ft \u00d7 3 ft",
       "condition": "Good",
       "main_photo": "7B68AA71-B730-4C40-94A8-A5A44C69B302_63CF0597-B977-4C07-B885-A336EFE0E363.jpg",
-      "series": "Botanical"
+      "series": "Botanical",
+      "asking_price": 350,
+      "sold": false,
+      "shipping": 25
     },
     {
       "uid": "600F1E71-33E1-40DF-BD54-A763E0727584",
@@ -68,7 +80,10 @@
       "size_label": "2 ft \u00d7 3 ft",
       "condition": "Good",
       "main_photo": "600F1E71-33E1-40DF-BD54-A763E0727584_D45F9432-34D1-4CF7-A966-A4AB0BC76260.jpg",
-      "series": "Botanical"
+      "series": "Botanical",
+      "asking_price": 250,
+      "sold": false,
+      "shipping": 25
     },
     {
       "uid": "4B1A4B4A-2AAC-400B-879C-1598ADD3E360",
@@ -81,7 +96,10 @@
       "size_label": "2.5 ft \u00d7 2.5 ft",
       "condition": "Damage: peeling/torn along right edge and top-right corner",
       "main_photo": "4B1A4B4A-2AAC-400B-879C-1598ADD3E360_EC0AC8BA-C01B-4CC2-8BA7-D0EE6685BB45.jpg",
-      "series": "Botanical"
+      "series": "Botanical",
+      "asking_price": 125,
+      "sold": false,
+      "shipping": 18
     },
     {
       "uid": "C94710AE-0990-403C-AF02-C2292E0311F9",
@@ -94,7 +112,10 @@
       "size_label": "4 ft \u00d7 2 ft",
       "condition": "Good \u2014 FUJIFILM border visible",
       "main_photo": "C94710AE-0990-403C-AF02-C2292E0311F9_7C579B95-A26D-4DDC-A547-2F5D16B86175.jpg",
-      "series": "Botanical"
+      "series": "Botanical",
+      "asking_price": 250,
+      "sold": false,
+      "shipping": 35
     },
     {
       "uid": "E61F290D-9E8F-4C35-9971-566D81AB388E",
@@ -107,7 +128,10 @@
       "size_label": "3 ft \u00d7 2 ft",
       "condition": "Damage: significant white residue/peeling on left side and bottom edge",
       "main_photo": "E61F290D-9E8F-4C35-9971-566D81AB388E_100BC633-D7A7-4EDF-A423-3DDD708A40C9.jpg",
-      "series": "Botanical"
+      "series": "Botanical",
+      "asking_price": 125,
+      "sold": false,
+      "shipping": 25
     },
     {
       "uid": "4489C5B2-CC9F-464D-896B-596541ED7633",
@@ -120,7 +144,10 @@
       "size_label": "3 ft \u00d7 2 ft",
       "condition": "Good \u2014 silver film sprocket holes on top and bottom borders",
       "main_photo": "4489C5B2-CC9F-464D-896B-596541ED7633_2FF462AF-3886-4869-9AA2-5F20A40AF6A6.jpg",
-      "series": "Wildlife"
+      "series": "Wildlife",
+      "asking_price": 250,
+      "sold": false,
+      "shipping": 25
     },
     {
       "uid": "F155D2B9-551F-4967-B9BE-40901D068149",
@@ -133,7 +160,10 @@
       "size_label": "2 ft \u00d7 3 ft",
       "condition": "Good \u2014 silver sprocket holes on sides",
       "main_photo": "F155D2B9-551F-4967-B9BE-40901D068149_B8753605-20B1-404D-ABCC-C370EDBD314E.jpg",
-      "series": "Wildlife"
+      "series": "Wildlife",
+      "asking_price": 250,
+      "sold": false,
+      "shipping": 25
     },
     {
       "uid": "EC895709-1A41-4841-820E-286BD403221D",
@@ -146,7 +176,10 @@
       "size_label": "3 ft \u00d7 3 ft",
       "condition": "Good",
       "main_photo": "EC895709-1A41-4841-820E-286BD403221D_F543710F-4F90-431E-8D0B-16DF3C9CB692.jpg",
-      "series": "Wildlife"
+      "series": "Wildlife",
+      "asking_price": 350,
+      "sold": false,
+      "shipping": 25
     },
     {
       "uid": "1B077EAB-3E9E-4F50-91AA-991FA415216D",
@@ -159,7 +192,10 @@
       "size_label": "3 ft \u00d7 1.5 ft",
       "condition": "",
       "main_photo": "1B077EAB-3E9E-4F50-91AA-991FA415216D_EE032F4E-1576-4865-BDAA-0909818C115D.jpg",
-      "series": "Hearts & Mesh"
+      "series": "Hearts & Mesh",
+      "asking_price": 175,
+      "sold": false,
+      "shipping": 25
     },
     {
       "uid": "3689FCDB-3A8A-47BB-BE44-26B926AABE18",
@@ -172,7 +208,10 @@
       "size_label": "3 ft \u00d7 2 ft",
       "condition": "Good",
       "main_photo": "3689FCDB-3A8A-47BB-BE44-26B926AABE18_DB8B3948-210B-4A62-A6B1-4C8CCBE1C0C8.jpg",
-      "series": "Hearts & Mesh"
+      "series": "Hearts & Mesh",
+      "asking_price": 250,
+      "sold": false,
+      "shipping": 25
     },
     {
       "uid": "863D1E9F-0B6B-4B89-A6F8-1D785071A7C5",
@@ -185,7 +224,10 @@
       "size_label": "3 ft \u00d7 2 ft",
       "condition": "Good",
       "main_photo": "863D1E9F-0B6B-4B89-A6F8-1D785071A7C5_FB7C3999-F604-4312-80C1-E984D8B6FE01.jpg",
-      "series": "Hearts & Mesh"
+      "series": "Hearts & Mesh",
+      "asking_price": 250,
+      "sold": false,
+      "shipping": 25
     },
     {
       "uid": "9C3A37FD-ABDE-4EA9-9BA6-2ACC1D10BEE8",
@@ -198,7 +240,10 @@
       "size_label": "3 ft \u00d7 2 ft",
       "condition": "Good \u2014 film sprocket holes visible on top and bottom borders",
       "main_photo": "9C3A37FD-ABDE-4EA9-9BA6-2ACC1D10BEE8_DD465885-648C-44B0-B4D2-BCCE94C84F81.jpg",
-      "series": "Chalk Series"
+      "series": "Chalk Series",
+      "asking_price": 250,
+      "sold": false,
+      "shipping": 25
     },
     {
       "uid": "7A21AA1F-994D-4497-8B22-6D299B1BCE21",
@@ -211,7 +256,10 @@
       "size_label": "3 ft \u00d7 2 ft",
       "condition": "Good \u2014 appears to be B&W print, not typical color Cibachrome",
       "main_photo": "7A21AA1F-994D-4497-8B22-6D299B1BCE21_F85A6327-4B21-4187-959B-E3CF444982C5.jpg",
-      "series": "Chalk Series"
+      "series": "Chalk Series",
+      "asking_price": 250,
+      "sold": false,
+      "shipping": 25
     },
     {
       "uid": "BE6335BB-773D-4233-8CB1-F79830D3C9C8",
@@ -224,7 +272,10 @@
       "size_label": "3 ft \u00d7 2 ft",
       "condition": "Good",
       "main_photo": "BE6335BB-773D-4233-8CB1-F79830D3C9C8_541EAD7A-2C9A-4137-BE0E-7343CF904BBC.jpg",
-      "series": "Chalk Series"
+      "series": "Chalk Series",
+      "asking_price": 250,
+      "sold": false,
+      "shipping": 25
     },
     {
       "uid": "82078156-0F65-4DFA-8966-0E8B696C7611",
@@ -237,7 +288,10 @@
       "size_label": "4 ft \u00d7 2 ft",
       "condition": "Good \u2014 white paper border",
       "main_photo": "82078156-0F65-4DFA-8966-0E8B696C7611_5A6C0E1A-F667-47DC-AB7E-3C28CD6621F9.jpg",
-      "series": "Chalk Series"
+      "series": "Chalk Series",
+      "asking_price": 250,
+      "sold": false,
+      "shipping": 35
     },
     {
       "uid": "1ED095C8-3B9C-4C61-AAD5-310C6740CA9B",
@@ -250,7 +304,10 @@
       "size_label": "6 ft \u00d7 2 ft",
       "condition": "Good",
       "main_photo": "1ED095C8-3B9C-4C61-AAD5-310C6740CA9B_3E7E78D6-B8FC-491B-9CD5-0336031476ED.jpg",
-      "series": "New York"
+      "series": "New York",
+      "asking_price": 500,
+      "sold": false,
+      "shipping": 55
     },
     {
       "uid": "5D6728E7-79E8-43CD-91FE-F29522438F35",
@@ -263,7 +320,10 @@
       "size_label": "3 ft \u00d7 2 ft",
       "condition": "Good",
       "main_photo": "5D6728E7-79E8-43CD-91FE-F29522438F35_1AC56550-2163-45BC-9C3F-CA40608155BC.jpg",
-      "series": "New York"
+      "series": "New York",
+      "asking_price": 350,
+      "sold": false,
+      "shipping": 25
     },
     {
       "uid": "7F7F0884-CED7-4365-86BD-AB14BD8F734E",
@@ -276,7 +336,10 @@
       "size_label": "3 ft \u00d7 2 ft",
       "condition": "Good",
       "main_photo": "7F7F0884-CED7-4365-86BD-AB14BD8F734E_43D75DD6-A172-42CE-9FFB-FD95601D5E2B.jpg",
-      "series": "New York"
+      "series": "New York",
+      "asking_price": 350,
+      "sold": false,
+      "shipping": 25
     },
     {
       "uid": "0209E66C-4642-44FD-9048-4CD45659C3C2",
@@ -289,7 +352,10 @@
       "size_label": "2 ft \u00d7 3 ft",
       "condition": "Good",
       "main_photo": "0209E66C-4642-44FD-9048-4CD45659C3C2_5258498D-EB0E-4D7A-9431-7C86A2B479D8.jpg",
-      "series": "New York"
+      "series": "New York",
+      "asking_price": 350,
+      "sold": false,
+      "shipping": 25
     },
     {
       "uid": "D1A51E8E-5EE7-4B9F-B575-E2F30B393CD6",
@@ -302,7 +368,10 @@
       "size_label": "2 ft \u00d7 3 ft",
       "condition": "Good",
       "main_photo": "D1A51E8E-5EE7-4B9F-B575-E2F30B393CD6_9C262436-C205-45DB-A837-7E2AEAD0A9E3.jpg",
-      "series": "New York"
+      "series": "New York",
+      "asking_price": 350,
+      "sold": false,
+      "shipping": 25
     },
     {
       "uid": "13B8E474-2E36-42E6-91E0-E3AE4F510CA5",
@@ -315,7 +384,10 @@
       "size_label": "3 ft \u00d7 3 ft",
       "condition": "Good",
       "main_photo": "13B8E474-2E36-42E6-91E0-E3AE4F510CA5_41820E06-51C5-4C35-8C01-6BA18540A4A6.jpg",
-      "series": "Gaucho & Pampas"
+      "series": "Gaucho & Pampas",
+      "asking_price": 350,
+      "sold": false,
+      "shipping": 25
     },
     {
       "uid": "AD0B042C-FEEB-4B65-9A20-57C09659E2E9",
@@ -328,7 +400,10 @@
       "size_label": "3 ft \u00d7 3 ft",
       "condition": "Good",
       "main_photo": "AD0B042C-FEEB-4B65-9A20-57C09659E2E9_59DCD342-DC53-4CE7-A91E-3014DD498DB5.jpg",
-      "series": "Gaucho & Pampas"
+      "series": "Gaucho & Pampas",
+      "asking_price": 350,
+      "sold": false,
+      "shipping": 25
     },
     {
       "uid": "AE8335B3-51B9-42D3-ADCE-1AFCC300DE8B",
@@ -341,7 +416,10 @@
       "size_label": "3 ft \u00d7 3 ft",
       "condition": "Good",
       "main_photo": "AE8335B3-51B9-42D3-ADCE-1AFCC300DE8B_77D8DE2C-7384-4476-A200-29AC0A37FF94.jpg",
-      "series": "Gaucho & Pampas"
+      "series": "Gaucho & Pampas",
+      "asking_price": 350,
+      "sold": false,
+      "shipping": 25
     },
     {
       "uid": "C6C6A291-2B44-458C-94BE-C196BCBFAA6A",
@@ -354,7 +432,10 @@
       "size_label": "3 ft \u00d7 3 ft",
       "condition": "Good",
       "main_photo": "C6C6A291-2B44-458C-94BE-C196BCBFAA6A_A2F04929-2B8C-45A5-9202-CDB775834666.jpg",
-      "series": "Gaucho & Pampas"
+      "series": "Gaucho & Pampas",
+      "asking_price": 350,
+      "sold": false,
+      "shipping": 25
     },
     {
       "uid": "8F35C62B-B982-4998-B491-AB2D91EFD07F",
@@ -367,7 +448,10 @@
       "size_label": "3 ft \u00d7 3 ft",
       "condition": "Light streaking/fading visible in upper center of image",
       "main_photo": "8F35C62B-B982-4998-B491-AB2D91EFD07F_2C162389-15C8-490E-8DAF-F072A8AB2EEF.jpg",
-      "series": "Gaucho & Pampas"
+      "series": "Gaucho & Pampas",
+      "asking_price": 350,
+      "sold": false,
+      "shipping": 25
     },
     {
       "uid": "84BCDEE0-4C44-4425-ADDC-A2CA002D4359",
@@ -380,7 +464,10 @@
       "size_label": "3 ft \u00d7 3 ft",
       "condition": "Good",
       "main_photo": "84BCDEE0-4C44-4425-ADDC-A2CA002D4359_6CCB2211-6595-4170-B34B-FAA3ABCF9832.jpg",
-      "series": "Gaucho & Pampas"
+      "series": "Gaucho & Pampas",
+      "asking_price": 350,
+      "sold": false,
+      "shipping": 25
     },
     {
       "uid": "1D05BC4A-7441-4B73-8DA3-91A484F7D6EB",
@@ -393,7 +480,10 @@
       "size_label": "2 ft \u00d7 2 ft",
       "condition": "Good",
       "main_photo": "1D05BC4A-7441-4B73-8DA3-91A484F7D6EB_BD14F6A3-7A7F-4AA7-84B8-B4DCAC091404.jpg",
-      "series": "Gaucho & Pampas"
+      "series": "Gaucho & Pampas",
+      "asking_price": 175,
+      "sold": false,
+      "shipping": 18
     },
     {
       "uid": "130E1B5A-A382-46AC-BF61-DC1420172935",
@@ -406,7 +496,10 @@
       "size_label": "4 ft \u00d7 2 ft",
       "condition": "Good \u2014 red film sprocket holes visible on top and bottom borders",
       "main_photo": "130E1B5A-A382-46AC-BF61-DC1420172935_17DF7EF1-2021-41BF-AAC9-9D9C23F181E0.jpg",
-      "series": "Ireland & Europe"
+      "series": "Ireland & Europe",
+      "asking_price": 250,
+      "sold": false,
+      "shipping": 35
     },
     {
       "uid": "CA599C86-BD9D-499E-9D83-FE3EBD40EC7E",
@@ -419,7 +512,10 @@
       "size_label": "4 ft \u00d7 2 ft",
       "condition": "Good \u2014 red film sprocket holes on top and bottom borders",
       "main_photo": "CA599C86-BD9D-499E-9D83-FE3EBD40EC7E_C36CF6D2-D218-42E1-A673-12DCC71CF5BD.jpg",
-      "series": "Ireland & Europe"
+      "series": "Ireland & Europe",
+      "asking_price": 250,
+      "sold": false,
+      "shipping": 35
     },
     {
       "uid": "263CD7DE-ECF2-4BD6-AF68-ACE8E4C5C357",
@@ -432,7 +528,10 @@
       "size_label": "2 ft \u00d7 3 ft",
       "condition": "Good \u2014 red film sprocket holes on all borders",
       "main_photo": "263CD7DE-ECF2-4BD6-AF68-ACE8E4C5C357_7C0D75B9-D71F-45C9-ABB8-64C7A5B1F674.jpg",
-      "series": "Ireland & Europe"
+      "series": "Ireland & Europe",
+      "asking_price": 250,
+      "sold": false,
+      "shipping": 25
     },
     {
       "uid": "620A17EF-36DC-4116-842A-1FFF43B87748",
@@ -445,7 +544,10 @@
       "size_label": "4 ft \u00d7 2 ft",
       "condition": "Good \u2014 red film sprocket holes on top and bottom borders",
       "main_photo": "620A17EF-36DC-4116-842A-1FFF43B87748_FE3092A6-419F-44CA-AA3F-BC580A5C43EB.jpg",
-      "series": "Ireland & Europe"
+      "series": "Ireland & Europe",
+      "asking_price": 250,
+      "sold": false,
+      "shipping": 35
     },
     {
       "uid": "2EDCE9DE-7CF4-4D4E-A269-2D168290F9BB",
@@ -458,7 +560,10 @@
       "size_label": "4 ft \u00d7 2.5 ft",
       "condition": "Good",
       "main_photo": "2EDCE9DE-7CF4-4D4E-A269-2D168290F9BB_988F2A79-C0C1-49F0-BB58-7AB89D7AF72A.jpg",
-      "series": "Natural Landscapes"
+      "series": "Natural Landscapes",
+      "asking_price": 350,
+      "sold": false,
+      "shipping": 35
     },
     {
       "uid": "4C8FBCFC-FE0D-410E-ADEE-D92E917A99C2",
@@ -471,7 +576,10 @@
       "size_label": "3.5 ft \u00d7 2.5 ft",
       "condition": "Minor scratch/mark lower-left of image",
       "main_photo": "4C8FBCFC-FE0D-410E-ADEE-D92E917A99C2_CD7BF2D3-E910-45BB-A1B9-33D2662E1B59.jpg",
-      "series": "Natural Landscapes"
+      "series": "Natural Landscapes",
+      "asking_price": 250,
+      "sold": false,
+      "shipping": 25
     },
     {
       "uid": "3B48AD58-0C33-4EF8-AA3C-F5B27E3C3E90",
@@ -484,7 +592,10 @@
       "size_label": "4 ft \u00d7 2.5 ft",
       "condition": "Good",
       "main_photo": "3B48AD58-0C33-4EF8-AA3C-F5B27E3C3E90_792D771C-7A11-4F48-99D1-453F6D449B19.jpg",
-      "series": "Natural Landscapes"
+      "series": "Natural Landscapes",
+      "asking_price": 350,
+      "sold": false,
+      "shipping": 35
     },
     {
       "uid": "CC0EEAC1-257C-4DE3-B30C-E0155AC0F19E",
@@ -497,7 +608,10 @@
       "size_label": "6 ft \u00d7 2 ft",
       "condition": "Good \u2014 FUJI RVP (Velvia) film markings and frame numbers visible in borders",
       "main_photo": "CC0EEAC1-257C-4DE3-B30C-E0155AC0F19E_E9BA37CB-2802-4CDE-BDA4-DFA62C88E31F.jpg",
-      "series": "Natural Landscapes"
+      "series": "Natural Landscapes",
+      "asking_price": 600,
+      "sold": false,
+      "shipping": 55
     },
     {
       "uid": "E13AE686-989F-431B-AB7B-5E8D99BF95FD",
@@ -510,7 +624,10 @@
       "size_label": "2 ft \u00d7 3 ft",
       "condition": "Good",
       "main_photo": "E13AE686-989F-431B-AB7B-5E8D99BF95FD_B651BBD2-68E1-4756-BC7B-50D874F72509.jpg",
-      "series": "Natural Landscapes"
+      "series": "Natural Landscapes",
+      "asking_price": 250,
+      "sold": false,
+      "shipping": 25
     },
     {
       "uid": "E155A334-645E-4B6F-9EEE-717FF3C9FAEB",
@@ -523,7 +640,10 @@
       "size_label": "3 ft \u00d7 2 ft",
       "condition": "Good \u2014 silver film sprocket holes on bottom border",
       "main_photo": "E155A334-645E-4B6F-9EEE-717FF3C9FAEB_0EF29191-C706-4554-BBAB-75C1507F5557.jpg",
-      "series": "World Portraiture"
+      "series": "World Portraiture",
+      "asking_price": 250,
+      "sold": false,
+      "shipping": 25
     },
     {
       "uid": "68FE7C3B-E32D-44AB-8A49-53F6487BDCF8",
@@ -536,7 +656,10 @@
       "size_label": "3 ft \u00d7 3 ft",
       "condition": "Good",
       "main_photo": "68FE7C3B-E32D-44AB-8A49-53F6487BDCF8_ED44E340-C091-4787-ADA4-508491448C21.jpg",
-      "series": "World Portraiture"
+      "series": "World Portraiture",
+      "asking_price": 350,
+      "sold": false,
+      "shipping": 25
     },
     {
       "uid": "0021A6EF-9EA6-4002-A2BD-D6E7679F05E0",
@@ -549,7 +672,10 @@
       "size_label": "3 ft \u00d7 2 ft",
       "condition": "Good",
       "main_photo": "0021A6EF-9EA6-4002-A2BD-D6E7679F05E0_44A8479D-2088-403C-962C-DEBD288577A4.jpg",
-      "series": "World Portraiture"
+      "series": "World Portraiture",
+      "asking_price": 250,
+      "sold": false,
+      "shipping": 25
     },
     {
       "uid": "5537ED25-EDBE-4151-8738-022112B916CB",
@@ -562,7 +688,10 @@
       "size_label": "2 ft \u00d7 3 ft",
       "condition": "Good \u2014 red/purple sprocket holes on side borders",
       "main_photo": "5537ED25-EDBE-4151-8738-022112B916CB_068A2E50-1945-46D2-9B63-AA6D47F9F09B.jpg",
-      "series": "World Portraiture"
+      "series": "World Portraiture",
+      "asking_price": 250,
+      "sold": false,
+      "shipping": 25
     },
     {
       "uid": "C2888D83-DA2F-4CE9-97D5-0A60CFE2A37C",
@@ -575,7 +704,10 @@
       "size_label": "2 ft \u00d7 3 ft",
       "condition": "Good",
       "main_photo": "C2888D83-DA2F-4CE9-97D5-0A60CFE2A37C_528C5C75-2387-4638-8265-4F1CE0AB6E5E.jpg",
-      "series": "The Beatles"
+      "series": "The Beatles",
+      "asking_price": 375,
+      "sold": false,
+      "shipping": 25
     },
     {
       "uid": "1EF0AE43-A95B-4337-A55C-CBEC46BC26C7",
@@ -588,7 +720,10 @@
       "size_label": "4 ft \u00d7 2 ft",
       "condition": "Note: B&W on white paper, not typical Cibachrome",
       "main_photo": "1EF0AE43-A95B-4337-A55C-CBEC46BC26C7_97102963-F9BF-4485-81EA-0086A7220A12.jpg",
-      "series": "The Beatles"
+      "series": "The Beatles",
+      "asking_price": 250,
+      "sold": false,
+      "shipping": 35
     },
     {
       "uid": "8AF40F95-F54B-47F7-8FD1-C810A395834E",
@@ -601,7 +736,10 @@
       "size_label": "3 ft \u00d7 2 ft",
       "condition": "Significant damage: large area of torn/peeling emulsion at bottom-right corner",
       "main_photo": "8AF40F95-F54B-47F7-8FD1-C810A395834E_60EC6437-1797-47B4-A33E-3A64227FE261.jpg",
-      "series": "Nude Studies"
+      "series": "Nude Studies",
+      "asking_price": 125,
+      "sold": false,
+      "shipping": 25
     },
     {
       "uid": "01EF728A-69B3-4C13-B4E1-3C39A15F25C2",
@@ -614,7 +752,10 @@
       "size_label": "3 ft \u00d7 2 ft",
       "condition": "Damage: torn/peeling at bottom-right corner",
       "main_photo": "01EF728A-69B3-4C13-B4E1-3C39A15F25C2_24A0E934-F8B5-46BC-92AD-CBCDAFCA95E3.jpg",
-      "series": "Nude Studies"
+      "series": "Nude Studies",
+      "asking_price": 125,
+      "sold": false,
+      "shipping": 25
     },
     {
       "uid": "F5DD8A9B-D293-404A-BD3A-4402AE92C9E4",
@@ -627,7 +768,10 @@
       "size_label": "3 ft \u00d7 2 ft",
       "condition": "Damage: torn/peeling material at bottom center and bottom-right",
       "main_photo": "F5DD8A9B-D293-404A-BD3A-4402AE92C9E4_D9CC6C74-4D7B-42BF-92A8-3FD219CF6590.jpg",
-      "series": "Nude Studies"
+      "series": "Nude Studies",
+      "asking_price": 125,
+      "sold": false,
+      "shipping": 25
     },
     {
       "uid": "6959020B-F308-4A64-B1CD-82B7EA6C9155",
@@ -640,7 +784,10 @@
       "size_label": "3 ft \u00d7 3 ft",
       "condition": "Good \u2014 shot on 120 medium format film (RDPII marking visible); image cropped within black border",
       "main_photo": "6959020B-F308-4A64-B1CD-82B7EA6C9155_D6A67DCC-8E5F-4606-A468-8740285A2F7F.jpg",
-      "series": "Nude Studies"
+      "series": "Nude Studies",
+      "asking_price": 350,
+      "sold": false,
+      "shipping": 25
     },
     {
       "uid": "7E87FB2A-02E2-4559-9F76-C9065A6C32E1",
@@ -653,7 +800,10 @@
       "size_label": "3 ft \u00d7 3 ft",
       "condition": "Good",
       "main_photo": "7E87FB2A-02E2-4559-9F76-C9065A6C32E1_2FE3F3E6-CC06-4EAA-BA38-E6B9784F3220.jpg",
-      "series": "Surrealist Still Life"
+      "series": "Surrealist Still Life",
+      "asking_price": 350,
+      "sold": false,
+      "shipping": 25
     },
     {
       "uid": "04B2E990-273C-4F9C-AE05-729A166D069F",
@@ -666,7 +816,10 @@
       "size_label": "3 ft \u00d7 4 ft",
       "condition": "Damage: white residue/peeling at bottom-right corner",
       "main_photo": "04B2E990-273C-4F9C-AE05-729A166D069F_F6AB32C1-08D0-4D44-9600-D966C5F993FA.jpg",
-      "series": "Surrealist Still Life"
+      "series": "Surrealist Still Life",
+      "asking_price": 350,
+      "sold": false,
+      "shipping": 35
     },
     {
       "uid": "BC453A6D-95E8-4B82-92C9-1D3C11AC9CF0",
@@ -679,7 +832,10 @@
       "size_label": "2 ft \u00d7 3 ft",
       "condition": "Good",
       "main_photo": "BC453A6D-95E8-4B82-92C9-1D3C11AC9CF0_685E19E2-CBE4-4368-8672-DB0DAFE58580.jpg",
-      "series": "Surrealist Still Life"
+      "series": "Surrealist Still Life",
+      "asking_price": 250,
+      "sold": false,
+      "shipping": 25
     },
     {
       "uid": "83DEB36C-3216-4F24-8BEA-0005E544DC5E",
@@ -692,7 +848,10 @@
       "size_label": "2 ft \u00d7 3 ft",
       "condition": "Good",
       "main_photo": "83DEB36C-3216-4F24-8BEA-0005E544DC5E_9FC2BE5B-A5D9-4366-B5D6-8A1ABD34827E.jpg",
-      "series": "Surrealist Still Life"
+      "series": "Surrealist Still Life",
+      "asking_price": 250,
+      "sold": false,
+      "shipping": 25
     },
     {
       "uid": "01BB5D31-DE75-4826-BB06-CE961BFEF30F",
@@ -705,7 +864,10 @@
       "size_label": "2 ft \u00d7 3 ft",
       "condition": "Good",
       "main_photo": "01BB5D31-DE75-4826-BB06-CE961BFEF30F_E203F782-706A-48CB-8066-B057FEC8FABA.jpg",
-      "series": "Surrealist Still Life"
+      "series": "Surrealist Still Life",
+      "asking_price": 250,
+      "sold": false,
+      "shipping": 25
     },
     {
       "uid": "615EFC60-09B0-4686-9726-5F40423985A0",
@@ -718,7 +880,10 @@
       "size_label": "3 ft \u00d7 3 ft",
       "condition": "Damage: white residue/peeling on right edge \u2014 registration holes in top border",
       "main_photo": "615EFC60-09B0-4686-9726-5F40423985A0_FBBDE8BF-0414-4DE8-98AE-61F16FA7F6A4.jpg",
-      "series": "Surrealist Still Life"
+      "series": "Surrealist Still Life",
+      "asking_price": 350,
+      "sold": true,
+      "shipping": 25
     },
     {
       "uid": "58B179B9-85DE-4B77-B601-BC3945391464",
@@ -731,7 +896,10 @@
       "size_label": "3 ft \u00d7 3 ft",
       "condition": "Good \u2014 registration punch holes in top border",
       "main_photo": "58B179B9-85DE-4B77-B601-BC3945391464_3ADB5575-20A2-4EC3-966B-12FAE5B1AAA0.jpg",
-      "series": "Surrealist Still Life"
+      "series": "Surrealist Still Life",
+      "asking_price": 350,
+      "sold": false,
+      "shipping": 25
     }
   ],
   "series": [
