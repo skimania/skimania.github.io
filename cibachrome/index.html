@@ -186,9 +186,11 @@
             display: block;
             transition: transform 0.5s ease, filter 0.3s;
             filter: saturate(0.85);
+            transform: scale(1.25);
+            transform-origin: center center;
         }
         .card:hover .card-img {
-            transform: scale(1.04);
+            transform: scale(1.32);
             filter: saturate(1.1);
         }
 
@@ -779,7 +781,7 @@ function updateLightbox() {
         contactEl.removeAttribute('href');
     } else {
         const subject = encodeURIComponent(`Enquiry: ${item.listing_name.split('—')[0].trim()} (No. ${item.number})`);
-        const body = encodeURIComponent(`Hi,\n\nI'm interested in purchasing:\n\n${item.listing_name.split('—')[0].trim()}\nSize: ${item.size_label}\nPrice: $${item.asking_price} + $${item.shipping} shipping\n\nPlease let me know how to proceed.\n\nThanks`);
+        const body = encodeURIComponent(`Hi,\n\nI'm interested in purchasing:\n\n${item.listing_name.split('—')[0].trim()}\nOriginal catalog: ${item.original_title}\nSize: ${item.size_label}\nPrice: $${item.asking_price} + $${item.shipping} shipping\n\nPlease let me know how to proceed.\n\nThanks`);
         contactEl.href = `mailto:cibachrome-prints.a9g7qx@bumpmail.io?subject=${subject}&body=${body}`;
         contactEl.textContent = '✉ Contact to Purchase';
         contactEl.className = 'lb-contact';
