@@ -34,7 +34,7 @@
       "main_photo": "4F99741D-0934-4CF4-B4E3-22BE3ABE6B30_AEBF0DAB-5A81-4B49-92D2-1228C5D11160.jpg",
       "series": "Botanical",
       "asking_price": 450,
-      "sold": false,
+      "sold": true,
       "shipping": 35
     },
     {
@@ -274,7 +274,7 @@
       "main_photo": "BE6335BB-773D-4233-8CB1-F79830D3C9C8_541EAD7A-2C9A-4137-BE0E-7343CF904BBC.jpg",
       "series": "Chalk Series",
       "asking_price": 250,
-      "sold": false,
+      "sold": true,
       "shipping": 25
     },
     {
